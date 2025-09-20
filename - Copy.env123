@@ -1,0 +1,49 @@
+#for MongoDB (start)
+#MONGO_URI=mongodb://localhost:27017
+
+# JWT Configuration
+#SECRET_KEY=EdrzG3gvKjpCtkqF5bwxr6PvdaAkjjDtAybaY960ayo
+#ALGORITHM=HS256
+#ACCESS_TOKEN_EXPIRE_MINUTES=30
+#for MongoDB (start)
+
+
+# PostgreSQL Config (OLD DB Config)
+#PG_DB_ENGINE=postgresql
+#PG_DB_MODULE=psycopg2
+#PG_DB_USERNAME=postgres
+#PG_DB_PASSWORD=supp0rt
+#PG_DB_HOST=172.16.21.29
+#PG_DB_PORT=30101
+#PG_DB_NAME=esds_swayatta4_db_new 
+
+# PostgreSQL Config (New DB Config (LOCAL SETUP))
+PG_DB_ENGINE=postgresql
+PG_DB_MODULE=psycopg2
+PG_DB_USERNAME='postgres'
+PG_DB_PASSWORD=123456
+PG_DB_HOST=localhost
+PG_DB_PORT=5432
+PG_DB_NAME=esds_swayatta4_db_new
+
+# Full DB URL (PostgreSQL)
+DB_URL=${PG_DB_ENGINE}+${PG_DB_MODULE}://${PG_DB_USERNAME}:${PG_DB_PASSWORD}@${PG_DB_HOST}:${PG_DB_PORT}/${PG_DB_NAME}
+
+SECRET_KEY=supersecretkey
+ALGORITHM=HS256
+ACCESS_TOKEN_EXPIRE_MINUTES=30
+
+
+#// MySQL Config (Alternative, uncomment to use MySQL instead of PostgreSQL) 
+#DB_ENGINE=mysql
+#DB_ENGINE=mysql
+#DB_MODULE=pymysql
+#DB_USERNAME=root
+#DB_PASSWORD=''
+#DB_HOST=localhost
+#DB_PORT=3306
+#DB_NAME= swayatta4_db
+#DB_NAME= esds_swayatta4_db
+
+# Full DB URL (MySQL)
+#DB_URL = ${DB_ENGINE}+${DB_MODULE}://${DB_USERNAME}:${DB_PASSWORD}@${DB_HOST}:${DB_PORT}/${DB_NAME}
